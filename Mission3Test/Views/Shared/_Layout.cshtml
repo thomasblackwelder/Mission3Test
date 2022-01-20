@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewData["Title"]</title>
+    <link href="~/img/Designbolts-Free-Valentine-Heart-Heart.ico" rel="shortcut icon" />
+    <link href="~/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/css/Styles.css" rel="stylesheet" />
+</head>
+<body>
+
+    <nav>
+        <a asp-controller="WebFiles" asp-action="Index">Home</a>
+        <a asp-controller="WebFiles" asp-action="Calculator">Grade Calculator</a>
+    </nav>
+
+    <div>
+        @RenderBody()
+    </div>
+
+
+    <script src="~/lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="~/lib/jquery/jquery-3.6.0.min.js"></script>
+    <script src="~/js/gradeCalculator.js"></script>
+</body>
+</html>
